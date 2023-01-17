@@ -1,19 +1,22 @@
 ////////////////////////////////
-// function myFn (a, b) {
-//     a++
-//     c = b + a
-//     return c
+// const a = 5;
+// function myFn () {
+//     function innerFn () {
+//         console.log(a);
+//     }
+//     innerFn();
 // }
 
+// myFn();
 ////////////////////////////////
-//Кол бэк функция
-
-// function printMyName () {
-//     console.log('Artiom')
+// let a;
+// a = 55 
+// function myFn () {
+//     a = 45;
+//     function innerFn () {
+//         a = 35 
+//         console.log(a);
+//     }
+//     innerFn();
 // }
-// console.log('Start')
-// setTimeout (printMyName, 2000)
-
-////////////////////////////////
-//
-
+// myFn();
