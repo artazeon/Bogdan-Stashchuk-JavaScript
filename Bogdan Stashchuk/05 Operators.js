@@ -33,3 +33,25 @@
 // const a = Object();
 // console.log(Boolean(!!a))
 
+
+////////////////////////////////////////////
+//     // Оператор ... разделения обьъекта на свойства
+// const button = {
+//     width: 200,
+//     text: 'Buy'
+// }
+
+// const redButton = {
+//     ...button,
+//     color: 'red'
+// }
+
+// //РАНЬШЕ МЫ ПИСАЛИ ЭТО ОПРЕАТОР ВОТ ТАК
+// // const redButton = {... button}
+// // redButton.color = 'red',
+
+
+// console.table(redButton)
+
+
+////////////////////////////////////////////
