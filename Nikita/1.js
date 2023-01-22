@@ -1,4 +1,5 @@
-let startLoad = 'step--xyu'
+let startLoad = 'step--loader'
+// let startLoad = 'step--1'
 
 const stepCount = () => {
     let startLoadArr = startLoad.split('--')
