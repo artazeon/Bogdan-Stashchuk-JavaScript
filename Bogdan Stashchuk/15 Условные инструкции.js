@@ -96,21 +96,56 @@
 
 // Использование switch
 
-const month = 2
+// const month = 2
 
-switch (month) {
-    case 12:
-        console.log('Декабрь')
-    break
+// switch (month) {
+//     case 12:
+//         console.log('Декабрь')
+//     break
         
-    case 1:
-        console.log('Январь')
-    break
+//     case 1:
+//         console.log('Январь')
+//     break
 
-    case 2: 
-        console.log('Ферваль')
-    break
-    
-    default: 
-        console.log('Это не зимний месяц')
-}
+//     case 2: 
+//         console.log('Ферваль')
+//     break
+
+//     default: 
+//         console.log('Это не зимний месяц')
+// }
+
+///////////////////////////////////////////
+
+// Тернарный оператор
+// Условие ? Выражение 1 : Выражение 2
+
+//////////////////
+
+// Условие 
+// ? Выражение 
+// 1 : Выражение 2
+
+//////////////////
+// const value = 11
+
+// value 
+//     ? console.log('Условие истинно')
+//     : console.log('Условие ложно')
+
+//////////////////
+
+// const value1 = 11
+// const value2 = 25
+
+// value1 && value2
+//     ? myFunction1 (value1, value2)
+//     : myFunction2 ()
+
+//////////////////
+
+let value = -5
+
+const res = value > 0 ? value : -value
+console.log(res)
+
