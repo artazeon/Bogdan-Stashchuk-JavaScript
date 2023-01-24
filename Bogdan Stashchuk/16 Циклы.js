@@ -10,7 +10,8 @@
 //     console.log(i)
 // }
 
-//////////////////// For для массивов
+//////////////////// For для массивов, - но не рекомендуется для массивов
+
 // const myArray = ['first', 'second', 'third']
 
 // for (let i = 0; i < myArray.length; i++) {
@@ -18,9 +19,27 @@
 // }
 
 
-//////////////////// ForEach
-const myArray = ['first', 'second', 'third']
+//////////////////// ForEach - для перебора массивов
 
-myArray.forEach((element, index) => {
-    console.log(element, index)
-})
+// const myArray = ['first', 'second', 'third']
+
+// myArray.forEach((element, index) => {
+//     console.log(element, index)
+// })
+
+//////////////////// While - пока условие позволяет
+
+// let i = 0
+
+// while (i < 5) {
+//     console.log(i)
+//     i++
+// }
+
+//////////////////// Do While - выполниться хотябы один раз
+// let i = 0
+
+// do {
+//     console.log(i)
+//     i++
+// }   while (i < 5)
