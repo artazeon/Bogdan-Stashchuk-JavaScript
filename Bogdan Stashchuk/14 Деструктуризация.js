@@ -31,7 +31,7 @@ const userProfile = {
     hasSignedAgreement: false,
 }
 
-const userInfo = ({ name, commentsQty}) => {
+const userInfo = ({name, commentsQty}) => {
     if (!commentsQty) {
         return `User ${name} has no commenst`
     }
