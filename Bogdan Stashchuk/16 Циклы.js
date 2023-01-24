@@ -43,3 +43,72 @@
 //     console.log(i)
 //     i++
 // }   while (i < 5)
+
+//////////////////// For In - блок инструкций выполняеться для каждого из свойств объекта
+
+// for (key in Object) {
+
+// }
+
+/////////// For In - перебирает все свойства объекта
+
+// const myObject = {
+//     x: 10,
+//     y: true,
+//     z: 'abc'
+// }
+
+
+// for (const key in myObject) {
+//     console.log(key, myObject[key])
+// }
+
+//////////////////// For In forEach для объектов
+
+// const myObject = {
+//     x: 10,
+//     y: true,
+//     z: 'abc'
+// }
+
+
+// Object.keys(myObject).forEach(key => {
+//     console.log(key, myObject[key])
+// })
+
+//////////////////// For In forEach для объектов, перебоор сразу значений
+
+// const myObject = {
+//     x: 10,
+//     y: true,
+//     z: 'abc'
+// }
+
+
+// Object.values(myObject).forEach(values => {
+//     console.log(values)
+// })
+
+/////////////////////////////////// For In для массивов
+
+// const myArray = [true, 10, 'abc', null]
+
+// for (const key in myArray) {
+//     console.log(myArray[key])
+// }
+
+/////////////////////////////////// FOR OF (не для объектов)
+
+// const myString = 'Hey'
+
+// for (const letter of myString) {
+//     console.log(letter)
+// }
+
+/////////////
+
+const myArray = [true, 10, 'abc', null]
+
+for (const element of myArray) {
+    console.log(element)
+}
