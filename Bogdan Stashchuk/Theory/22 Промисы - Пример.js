@@ -9,4 +9,9 @@ getData ('https://jsonplaceholder.typicode.com/todos/')
     .then(data => console.log(data))
     .cath(error => console.log(error.message))
 
-    
+
+
+
+    resolve () {
+        asdassadas
+    }
