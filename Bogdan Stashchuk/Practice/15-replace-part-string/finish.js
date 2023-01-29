@@ -6,3 +6,7 @@
  *
  * 3. Выведите значение второй переменной в консоль
  */
+
+const hello = 'Good Morning'
+updHello = hello.replace('Morning', 'Evening')
+console.log(updHello)
