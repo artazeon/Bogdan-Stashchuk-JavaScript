@@ -10,3 +10,13 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+
+
+const arta = function (name) {
+    return 'Привет, ' + name
+}
+
+
+console.log(arta('Артём'))
+console.log(arta('Вика'))

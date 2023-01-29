@@ -12,3 +12,17 @@
  *
  * 4. Вызовите функцию
  */
+
+/**
+ * Возвращает разницу двух чисел
+ * @param {number} a
+ * @param {number} b
+ * @return {number} Разница числел a и b
+ * */
+
+
+ const razn = (a, b) => {
+    return a - b
+}
+
+console.log(razn(11, 4))
