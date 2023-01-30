@@ -10,3 +10,11 @@
 
 const myNumber1 = 10 // 10 = 3 + 3 + 3 + 1
 const myNumber2 = 3
+
+razn = 2 + myNumber1 % myNumber2
+
+console.log(razn)
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+
