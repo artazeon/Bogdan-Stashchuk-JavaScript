@@ -8,3 +8,10 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+ const myArray = [11, true, 'abc', null]
+
+ console.log(myArray)
+
+ myArray[1] = false
+
+ console.log(myArray)
