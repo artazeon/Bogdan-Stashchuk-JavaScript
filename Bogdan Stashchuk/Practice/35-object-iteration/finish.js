@@ -13,3 +13,13 @@ const myObject = {
   key4: null,
   key10: NaN,
 }
+
+// console.log(Object.keys(myObject))
+
+Object.keys(myObject).forEach(key => {
+
+  if (key === 'key3' ||  key === 'key4') {
+    console.log(key, myObject[key])}
+})
+
+
