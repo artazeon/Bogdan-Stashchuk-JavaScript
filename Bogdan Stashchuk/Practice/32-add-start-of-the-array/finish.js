@@ -9,6 +9,8 @@
 
 const myArray = [true, null]
 
-// Напишите код здесь
+myArray.unshift('Привет', 100)
 
+// Напишите код здесь
+console.log(myArray.length)
 console.log(myArray) // [100, "Hello", true, null]
