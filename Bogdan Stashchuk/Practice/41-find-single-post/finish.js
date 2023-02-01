@@ -12,11 +12,15 @@
  * 4. Также внутри функции выведите в консоль ID поста
  */
 
-const posts = [
+ const posts = [
   { postId: 1355, commentsQuantity: 5 },
   { postId: 5131, commentsQuantity: 13 },
   { postId: 6134, commentsQuantity: 2 },
 ]
+
+function findPostById (idPost, arrPosts) {
+  return arrPosts.find(elementMassiva => idPost === elementMassiva.postId)
+}
 
 console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
 
