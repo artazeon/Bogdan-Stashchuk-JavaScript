@@ -23,6 +23,17 @@ const fruits = [
 
 const primitiveTypesArray = [25, 'x', true, undefined, null]
 
+function isElementInArray(searchElement, inputArray) {
+  
+  if (typeof searchElement == 'object') {
+    return JSON.stringify(inputArray).includes(JSON.stringify(searchElement))
+
+  } else {
+    return inputArray.includes(searchElement)
+  }
+}
+
+
 console.log(isElementInArray(['css', 'flexbox'], tags)) // true
 
 console.log(isElementInArray(['flexbox', 'css'], tags)) // false

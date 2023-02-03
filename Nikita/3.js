@@ -5,8 +5,6 @@ const company = {
             }
         }
     }
-
-
 const arr = company.production.team.front
 
 console.log(arr)

@@ -14,10 +14,16 @@
 const a = [1, 2, 3]
 const b = [1, 2, 3]
 
-console.log(a === b) // false (Почему?)
+console.log(a === b) // false (Почему?) // Потому что в а и б содержаться ссылки на массивы, и они разные
 
-const c = [2, 1, 3]
+const c = [2, , 3]
 const d = [1, 2, 3, 4]
+
+function areArraysEqual(firstArray, secondArray) {
+// return firstArray.toString() === secondArray.toString()
+return JSON.stringify(firstArray) === JSON.stringify(secondArray)
+
+}
 
 console.log(areArraysEqual(a, b)) // true
 console.log(areArraysEqual(a, c)) // false
