@@ -12,6 +12,14 @@
 
 const myNumbers = [123, 50, 27]
 
+function pushIfUnique (inputArray, newElement) {
+    if (inputArray.every(item => item !== newElement)){
+       return inputArray.push(newElement)
+    }
+    console.log(`${newElement} уже находится в массиве`)
+}
+
+
 pushIfUnique(myNumbers, 50) // "50 уже в массиве"
 console.log(myNumbers) // [123, 50, 27]
 

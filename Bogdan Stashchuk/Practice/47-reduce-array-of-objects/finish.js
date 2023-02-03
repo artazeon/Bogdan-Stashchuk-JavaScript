@@ -24,6 +24,25 @@ const inputPosts = [
   },
 ]
 
+
+
+
+
+function popularPostsIds (posts, minimalComentsQty) {
+  
+  return posts.reduce((total, post) => {
+
+    if (post.comments >= minimalComentsQty) {
+      total.push(post.postId)  
+    }
+    return total
+  }, [])
+
+}
+
+
+
+
 console.log(popularPostsIds(inputPosts, 10)) // [3421, 8135]
 
 console.log(popularPostsIds(inputPosts, 15)) // [3421]
