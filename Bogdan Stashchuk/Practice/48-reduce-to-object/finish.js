@@ -34,6 +34,24 @@ const inputProducts = [
   },
 ]
 
+
+function quantitiesByCategories (products) {
+  return products.reduce((accum, tekObj) => {
+    accum[tekObj.category] = (accum[tekObj.category] || 0) + tekObj.quantity
+    return accum
+  }, {})
+}
+
+// function quantitiesByCategories (products) {
+//   return products.reduce((accum, tekObj) => {
+//     const zalupa = tekObj.category 
+//     return {
+//       ...accum,
+//       [zalupa] : (accum[zalupa] || 0) + tekObj.quantity
+//     }
+//   }, {})
+// }
+
 console.log(quantitiesByCategories(inputProducts))
 /* {
   Accessories: 3,
