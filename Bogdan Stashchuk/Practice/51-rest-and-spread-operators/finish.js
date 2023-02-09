@@ -22,6 +22,7 @@ function meanScore(...arr) {
   if (arr.some((item) => typeof item !== 'number')) {
     return 'Все аргументы в вызове функции должны быть числами!'
   }
+  
   return arr.reduce((acc, item) => acc + item / arr.length, 0).toFixed(2)
 
 }
