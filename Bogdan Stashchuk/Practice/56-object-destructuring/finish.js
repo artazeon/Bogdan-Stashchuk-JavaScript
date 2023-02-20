@@ -6,15 +6,14 @@
  */
 
 const personInfo = (person) => {
-  //const {name, age:personAge, location:{country:origin}, location:{city:homeCity}, friendsQty = 0, createdAtYear = new Date().getFullYear()} = person
-  const { 
+  const {
     name,
-    age: personAge, 
-    location: { country: origin, city: homeCity }, 
-    friendsQty = 0, 
+    age: personAge,
+    location: { country: origin, city: homeCity },
+    friendsQty = 0,
     createdAtYear = new Date().getFullYear()
-   } = person
-   
+  } = person
+
   return {
     name,
     personAge,
