@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Уроки по JavaScript</title>
-</head>
-<body>
-    <p>Абзац
-        <ul>
-            <li><b>Элементы списка</b></li>
-        </ul>
-        <!-- <script>
+  </head>
+  <body>
+    <p>Абзац</p>
+    <ul>
+      <li><b>Элементы списка</b></li>
+    </ul>
+    <!-- <script>
             let html = document.documentElement;
             let body = document.body;
             let head = document.head
             console.log(html, body, head)
         </script> -->
-        <!-- <script>
+    <!-- <script>
             for (let i = 0; i < document.body.childNodes.length; i++) {
                 console.log(document.body.childNodes[i])
             }
         </script> -->
-        <!-- <script>
+    <!-- <script>
             for (let child of document.body.childNodes) {
                 console.log(child)
             }
         </script> -->
-        <script>
-            let html = document.documentElement
-            let first = html.firstChild
-            let last = html.lastChild
-            console.log(first)
-            console.log(last)
-        </script>
-    
-</body>
+    <!-- <script>
+      let html = document.documentElement;
+    //   let first = html.firstChild;
+    //   let last = html.lastChild;
+      let first = html.childNodes[0];
+      let last = html.childNodes[html.childNodes.length - 1];
+      console.log(first);
+      console.log(last);
+    </script> -->
+    <!-- <script>
+      let html = document.documentElement;
+      console.log(html.hasChildNodes());
+    </script> -->
+    <!-- <script>
+      let html = document.documentElement;
+      for (let child of document.body.children)
+      {console.log(child)}   
+    </script> -->
+    <script>
+      console.log(document.head.nextSibling);
+      console.log(document.body.previousSibling);
+    </script>
+  </body>
 </html>
