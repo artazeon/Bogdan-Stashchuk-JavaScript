@@ -43,8 +43,10 @@
       {console.log(child)}   
     </script> -->
     <script>
-      console.log(document.head.nextSibling);
-      console.log(document.body.previousSibling);
+      let html = document.documentElement
+      console.log(html.parentNode);
+      console.log(html.parentElement);
+      
     </script>
   </body>
 </html>
