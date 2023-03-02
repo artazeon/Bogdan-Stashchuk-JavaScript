@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Уроки по JavaScript</title>
+  </head>
+  <body><!-- комментарий --><h1>Заголовок страницы</h1>
+    <div id="comm">Мигающий текст</div>
+    <!-- <script>
+      let comm = document.body.firstChild
+      console.log(comm.nodeName)
+      console.log(document.body.nodeName)
+      console.log(comm.tagName)
+      console.log(document.body.tagName)
+    </script> -->
+    <!-- <script>
+      let h1 = document.body.firstChild.nextSibling;
+      h1.innerHTML = ' Изменённый <u>заголовок</u>'
+      h1.innerHTML += ' Изменённый <u>заголовок</u>'
+      console.log(h1.innerHTML);
+    </script> -->
+    <!-- <script>
+      let comm = document.body.firstChild
+      comm.data = '123'
+      console.log(comm.data);
+    </script> -->
+    <!-- <script>
+      console.log(document.body.textContent);
+    </script> -->
+    <!-- <script>
+      let msg = prompt("Ваш комментарий:", "")
+      comm.textContent = msg;
+    </script> -->
+    <script>
+      let comm = document.getElementById("comm")
+      comm.hidden = false;
+      setInterval(()=> comm.hidden = !comm.hidden, 500);      
+    </script>
+  </body>
+</html>
