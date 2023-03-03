@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Уроки по JavaScript</title>
+  </head>
+  <body>
+    <style>
+      .message {
+        width: 200px;
+        background: #eee;
+        padding: 10px;
+      }
+      .message.ex {
+        color: #0000cc;
+      }
+
+    </style>
+    <div class="message ex ss">Важная информация!</div>
+  
+  
+    <script>
+      let elem = document.querySelector('div')
+      // elem.className = 'message'
+      // elem.classList.add('ex')
+      for (let cl of elem.classList)
+      console.log(cl)
+
+    </script>
+  </body>
+</html>

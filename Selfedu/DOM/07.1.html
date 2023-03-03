@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Уроки по JavaScript</title>
+  </head>
+  <body>
+    <style>
+      .msg {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        background: #20454B;
+        padding: 5px;
+        border-radius: 5px;
+        color: #eee;
+        font-size: 24px;
+      }
+    </style>
+    <div class="msg">Важная информация!</div>
+    <div style="position: absolute; top: 200px; left: 50%;">Информация 2</div>
+    
+    <script>
+      let elem = document.querySelector('div.msg')
+      console.log(elem.className)
+      let elem2 = elem.nextSibling.nextSibling
+      console.log(elem2.style.top)
+    </script>
+  </body>
+</html>
