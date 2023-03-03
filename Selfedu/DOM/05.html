@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Уроки по JavaScript</title>
+  </head>
+  <body>
+    <div id="comm" deflt="Значение">Сообщения</div>
+    <!-- <script>
+      let body = document.body;
+      body.myStyle = {
+        color: "red",
+        fontSize: 20,
+      };
+
+      body.getFontSize = function () {
+        return this.myStyle.fontSize;
+      };
+      console.log(body.getFontSize());
+      console.dir(body);
+    </script> -->
+    <script>
+      let div = document.getElementById("comm")
+      console.log(div.getAttribute('deflt'))
+    </script>
+  </body>
+</html>
